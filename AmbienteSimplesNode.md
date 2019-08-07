@@ -12,12 +12,17 @@
 - Certbot (SSL)
   
 
-#### Atualizando ambiente
+### Atualizando ambiente
 
 ```
 $ sudo yum update
-```
 
+```
+### Instalando o EPEL no AWS (CentOS 7)
+
+```
+sudo amazon-linux-extras install epel
+```
 
 ### Instalando o servidor Web Proxy Nginx
 
@@ -98,13 +103,6 @@ npm i -g pm2
 
 ```
 pm2 list
-```
-
-
-### Instalando o EPEL no AWS (CentOS 7)
-
-```
-sudo amazon-linux-extras install epel
 ```
 
 
