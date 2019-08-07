@@ -54,7 +54,10 @@ $ sudo systemctl enable mariadb //colocar na inicialização
 #### Configurando o MariaDB
 
 ```
+//Logar como root
 mysql -u root -p mysql
+
+//Mostrar todos os usuários
 SELECT User,Host FROM mysql.user;
 
 //Adicionar um usuário
@@ -62,6 +65,9 @@ GRANT ALL PRIVILEGES ON *.* TO 'remote'@'my-ip' IDENTIFIED BY 'new-pass' WITH GR
 
 //Remover um usuário
 DROP USER 'remote'@'my-ip'
+
+//Mostrar Conexões
+show processlist;
 ```
 
 ### Instalando o gerenciador de versões do Node o "nvm"
