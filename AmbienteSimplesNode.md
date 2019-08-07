@@ -3,7 +3,7 @@
 
 ## Dependências
 
-- OS CentOS 7
+- CentOS 7
 - Nginx
 - Nvm
 - Pm2
@@ -14,31 +14,37 @@
 #### Atualizando ambiente
 
 ```
-sudo yum update
+$ sudo yum update
 ```
 
 
 #### Instalando o servidor Web Proxy Nginx
 
 ```
-sudo yum install nginx -y
+$ sudo yum install nginx -y
 ```
 
 ```
-sudo service nginx start
-```
-
-```
-systemctl status nginx.service
+$ sudo systemctl start nginx
+$ sudo systemctl enable nginx
+$ sudo systemctl status nginx
 ```
 
 
 #### Habilitar o reinicio automático do NGINX
 
 ```
-sudo systemctl enable nginx.service
+$ sudo systemctl enable nginx.service
 ```
 
+### Instalando MySQL (MariaDB)
+
+```
+$ sudo yum install mariadb-server mariadb
+$ sudo systemctl start mariadb
+$ sudo mysql_secure_installation //setar um password
+$ sudo systemctl enable mariadb //colocar na inicialização
+```
 
 #### Instalando o gerenciador de versões do Node o "nvm"
 
@@ -94,6 +100,11 @@ sudo amazon-linux-extras install epel
 sudo yum install httpd mod_ssl python-certbot-nginx
 ```
 
+#### Instalando Maria-DB
+
+```
+sudo systemctl start mariadb
+```
 
 ### Fazendo o deploy de uma aplicação simples
 
