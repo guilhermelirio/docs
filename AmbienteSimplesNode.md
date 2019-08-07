@@ -1,11 +1,9 @@
 ## Preparando Ambiente NodeJS Simples para Deploy
 
-Lembrando que, estou logado como root no servidor, por este motivo não utilizei o sudo.
-
 
 ## Dependências
 
-- OS Ubuntu 16.x ou Superior
+- OS CentOS 7
 - Nginx
 - Nvm
 - Pm2
@@ -16,27 +14,27 @@ Lembrando que, estou logado como root no servidor, por este motivo não utilizei
 #### Atualizando ambiente
 
 ```
-apt update
-```
-
-```
-apt upgrade -y
-```
-
-#### Instalando o editor de textos "nano"
-
-```
-apt install nano -y
+sudo yum update
 ```
 
 #### Instalando o servidor Web Proxy Nginx
 
 ```
-apt install nginx -y
+sudo yum install nginx -y
 ```
 
 ```
-service nginx start
+sudo service nginx start
+```
+
+```
+systemctl status nginx.service
+```
+
+#### Habilitar o reinicio automático do NGINX
+
+```
+sudo systemctl enable nginx.service
 ```
 
 #### Instalando o gerenciador de versões do Node o "nvm"
@@ -77,22 +75,16 @@ npm i -g pm2
 pm2 list
 ```
 
-#### Instalando o Certbot (Let’s Encrypt)
+#### Instalando o EPEL no AWS (CentOS 7)
 
 ```
-apt-get install software-properties-common
+sudo amazon-linux-extras install epel
 ```
 
-```
-add-apt-repository ppa:certbot/certbot
-```
+#### Instalando o Certbot Client (Let`s Script)
 
 ```
-apt-get update
-```
-
-```
-apt-get install python-certbot-nginx
+sudo yum install httpd mod_ssl python-certbot-nginx
 ```
 
 ### Fazendo o deploy de uma aplicação simples
