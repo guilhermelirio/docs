@@ -8,7 +8,6 @@
 - MariaDB
 - Nvm
 - Pm2
-- Editor Nano (pico)
 - Certbot (SSL)
   
 
