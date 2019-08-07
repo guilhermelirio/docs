@@ -17,6 +17,7 @@
 sudo yum update
 ```
 
+
 #### Instalando o servidor Web Proxy Nginx
 
 ```
@@ -31,11 +32,13 @@ sudo service nginx start
 systemctl status nginx.service
 ```
 
+
 #### Habilitar o reinicio automático do NGINX
 
 ```
 sudo systemctl enable nginx.service
 ```
+
 
 #### Instalando o gerenciador de versões do Node o "nvm"
 
@@ -51,6 +54,7 @@ source ~/.bashrc
 nvm -v
 ```
 
+
 #### Instalando uma versão do Node com o NVM
 
 ```
@@ -65,6 +69,7 @@ npm -v
 node -v
 ```
 
+
 #### Instalando o PM2
 
 ```
@@ -75,17 +80,20 @@ npm i -g pm2
 pm2 list
 ```
 
+
 #### Instalando o EPEL no AWS (CentOS 7)
 
 ```
 sudo amazon-linux-extras install epel
 ```
 
+
 #### Instalando o Certbot Client (Let`s Script)
 
 ```
 sudo yum install httpd mod_ssl python-certbot-nginx
 ```
+
 
 ### Fazendo o deploy de uma aplicação simples
 
@@ -102,6 +110,7 @@ Após realizar o clone do app, acesse o diretório que foi clonado e rode o coma
 ```
 npm install
 ```
+
 
 Instalado as depêndencias do projeto, iremos utilizar o pm2 para gerenciar o deploy da aplicação, vamos rodar comando
 
