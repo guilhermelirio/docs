@@ -19,7 +19,7 @@ $ sudo yum update
 ```
 
 
-#### Instalando o servidor Web Proxy Nginx
+### Instalando o servidor Web Proxy Nginx
 
 ```
 $ sudo yum install nginx -y
@@ -60,7 +60,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'remote'@'my-ip' IDENTIFIED BY 'new-pass' WITH GR
 DROP USER 'remote'@'my-ip'
 ```
 
-#### Instalando o gerenciador de versões do Node o "nvm"
+### Instalando o gerenciador de versões do Node o "nvm"
 
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -75,7 +75,7 @@ nvm --version
 ```
 
 
-#### Instalando uma versão do Node com o NVM
+### Instalando uma versão do Node com o NVM
 
 ```
 nvm install v10.13.0
@@ -90,7 +90,7 @@ node -v
 ```
 
 
-#### Instalando o PM2
+### Instalando o PM2
 
 ```
 npm i -g pm2
@@ -101,20 +101,20 @@ pm2 list
 ```
 
 
-#### Instalando o EPEL no AWS (CentOS 7)
+### Instalando o EPEL no AWS (CentOS 7)
 
 ```
 sudo amazon-linux-extras install epel
 ```
 
 
-#### Instalando o Certbot Client (Let`s Script)
+### Instalando o Certbot Client (Let`s Script)
 
 ```
 sudo yum install httpd mod_ssl python-certbot-nginx
 ```
 
-#### Instalando Maria-DB
+### Instalando Maria-DB
 
 ```
 sudo systemctl start mariadb
