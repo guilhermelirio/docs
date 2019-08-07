@@ -5,6 +5,7 @@
 
 - CentOS 7
 - Nginx
+- MariaDB
 - Nvm
 - Pm2
 - Editor Nano (pico)
@@ -70,7 +71,7 @@ source ~/.bashrc
 ```
 
 ```
-nvm -v
+nvm --version
 ```
 
 
