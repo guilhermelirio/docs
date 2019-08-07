@@ -114,12 +114,6 @@ sudo amazon-linux-extras install epel
 sudo yum install httpd mod_ssl python-certbot-nginx
 ```
 
-### Instalando Maria-DB
-
-```
-sudo systemctl start mariadb
-```
-
 ### Fazendo o deploy de uma aplicação simples
 
 *Abaixo é apenas um exemplo*
