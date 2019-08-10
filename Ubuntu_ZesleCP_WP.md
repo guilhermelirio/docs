@@ -1,5 +1,5 @@
 
-#### Instalando o ZesleCP
+## Instalando o ZesleCP
 
 ```
 cd /home && sudo curl -o latest -L http://zeslecp.com/release/latest && sudo sh latest
