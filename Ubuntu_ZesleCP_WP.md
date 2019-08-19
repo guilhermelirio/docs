@@ -4,6 +4,7 @@
 ```
 cd /home && sudo curl -o latest -L http://zeslecp.com/release/latest && sudo sh latest
 sudo passwd root
+sudo passwd ubuntu 
 ```
 
 ### Configurando o ZesleCP
