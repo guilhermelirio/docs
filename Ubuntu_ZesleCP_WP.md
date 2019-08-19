@@ -21,3 +21,9 @@ Criar um tipo A, com www e sem www, e colocar o IP do AWS Instance.
 3. Salvar (CTRL+X, Y + ENTER)
 4. Restartar: systemctl restart mysql.service
 ```
+
+### Alterar Senha do root
+
+```
+UPDATE mysql.user SET authentication_string = PASSWORD('MyNewPass'), password_expired = 'N' WHERE User = 'root' AND Host = 'localhost';
+```
