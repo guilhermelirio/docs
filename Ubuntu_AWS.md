@@ -10,6 +10,9 @@
 #### Iniciando o MySQL Server
 ```$ sudo systemctl start mysql```
 
+#### Restartar o MySQL Server
+```$ sudo systemctl restart mysql```
+
 #### Colocar MySQL na Inicialização do servidor
 ```$ sudo systemctl enable mysql```
 
