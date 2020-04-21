@@ -4,16 +4,16 @@
 ### Instalando o MySQL
 - sudo apt-get install mysql-server
 
-## Criando a senha root
+#### Criando a senha root
 - sudo mysql_secure_installation utility
 
-## Iniciando o MySQL Server
+#### Iniciando o MySQL Server
 - sudo systemctl start mysql
 
-## Colocar MySQL na Inicialização do servidor
+#### Colocar MySQL na Inicialização do servidor
 - sudo systemctl enable mysql
 
-## Configurando o MySQL
+#### Configurando o MySQL
 ```
 //Logar como root
 sudo mysql -u root -p mysql (usar a senha criada um pouco acima)
