@@ -1,17 +1,17 @@
 ### Atualizando ambiente
-- sudo apt-get update
+```sudo apt-get update```
 
 ### Instalando o MySQL
-- sudo apt-get install mysql-server
+```sudo apt-get install mysql-server```
 
 #### Criando a senha root
-- sudo mysql_secure_installation utility
+```sudo mysql_secure_installation utility```
 
 #### Iniciando o MySQL Server
-- sudo systemctl start mysql
+```sudo systemctl start mysql```
 
 #### Colocar MySQL na Inicialização do servidor
-- sudo systemctl enable mysql
+```sudo systemctl enable mysql```
 
 #### Configurando o MySQL
 ```
