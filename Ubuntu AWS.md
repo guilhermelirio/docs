@@ -31,7 +31,7 @@ mysql> DROP USER 'remote'@'my-ip'
 mysql> show processlist;
 ```
 
-## Liberando o acesso remoto ao MySQL
+#### Liberando o acesso remoto ao MySQL
 ```
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 
@@ -44,7 +44,7 @@ Crtl + X
 Y
 ```
 
-### Instalando o gerenciador de versões do Node o "nvm"
+## Instalando o gerenciador de versões do Node o "nvm"
 
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -59,7 +59,7 @@ nvm --version
 ```
 
 
-### Instalando uma versão do Node com o NVM
+## Instalando uma versão do Node com o NVM
 
 ```
 nvm install v10.13.0
@@ -74,7 +74,7 @@ node -v
 ```
 
 
-### Instalando o PM2
+## Instalando o PM2
 
 ```
 npm i -g pm2
