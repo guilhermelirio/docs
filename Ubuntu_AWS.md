@@ -5,7 +5,11 @@
 ```$ sudo apt-get install mysql-server```
 
 #### Criando a senha root
-```$ sudo mysql_secure_installation utility```
+```$ sudo mysql_secure_installation utility
+
+=> Irá pedir a senha, digite-a, e depois seelcione Y para todas as perguntas.
+```
+
 
 #### Iniciando o MySQL Server
 ```$ sudo systemctl start mysql```
