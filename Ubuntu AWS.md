@@ -1,39 +1,40 @@
-### Atualizando ambiente
-```sudo apt-get update```
+## Atualizando ambiente
+```$ sudo apt-get update```
 
-### Instalando o MySQL
-```sudo apt-get install mysql-server```
+## Instalando o MySQL
+```$ sudo apt-get install mysql-server```
 
 #### Criando a senha root
-```sudo mysql_secure_installation utility```
+```$ sudo mysql_secure_installation utility```
 
 #### Iniciando o MySQL Server
-```sudo systemctl start mysql```
+```$ sudo systemctl start mysql```
 
 #### Colocar MySQL na Inicialização do servidor
-```sudo systemctl enable mysql```
+```$ sudo systemctl enable mysql```
 
 #### Configurando o MySQL
 ```
 //Logar como root
-sudo mysql -u root -p mysql (usar a senha criada um pouco acima)
+$ sudo mysql -u root -p mysql (usar a senha criada um pouco acima)
 
 //Mostrar todos os usuários
-SELECT User,Host FROM mysql.user;
+mysql> SELECT User,Host FROM mysql.user;
 
 //Adicionar um usuário
-GRANT ALL PRIVILEGES ON *.* TO 'remote'@'my-ip' IDENTIFIED BY 'new-pass' WITH GRANT OPTION;
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'remote'@'my-ip' IDENTIFIED BY 'new-pass' WITH GRANT OPTION;
 
 //Remover um usuário
-DROP USER 'remote'@'my-ip'
+mysql> DROP USER 'remote'@'my-ip'
 
 //Mostrar Conexões
-show processlist;
+mysql> show processlist;
 ```
 
 ## Liberando o acesso remoto ao MySQL
--sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+
 //Alterar
 - bind-address = 127.0.0.1
 //Para
