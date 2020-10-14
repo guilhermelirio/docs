@@ -92,3 +92,7 @@ npm i -g pm2
 pm2 list
 ```
 
+```
+pm2 start index.js --name site1
+```
+
