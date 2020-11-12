@@ -34,7 +34,7 @@ $ sudo mysql -u root -p mysql (usar a senha criada um pouco acima)
 mysql> SELECT User,Host FROM mysql.user;
 
 //Adicionar um usuário
-mysql> GRANT ALL PRIVILEGES ON *.* TO 'remote'@'my-ip' IDENTIFIED BY 'new-pass' WITH GRANT OPTION;
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'remote-user'@'%' IDENTIFIED BY 'new-pass' WITH GRANT OPTION; //alterar o remote-user e new-pass
 
 //Remover um usuário
 mysql> DROP USER 'remote'@'my-ip'
