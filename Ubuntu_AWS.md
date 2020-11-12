@@ -8,7 +8,11 @@
 ```
 $ sudo mysql_secure_installation utility
 
-=> Irá pedir a senha, digite-a, e depois seelcione Y para todas as perguntas.
+Digite: Y
+
+Digite: 1 (MEDIUM)
+
+=> Irá pedir a senha, digite-a, e depois selecione Y para todas as perguntas.
 ```
 
 
