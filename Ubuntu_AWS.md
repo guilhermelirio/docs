@@ -46,6 +46,9 @@ mysql> DROP USER 'remote'@'my-ip'
 
 //Mostrar Conexões
 mysql> show processlist;
+
+//Erro 'caching_sha2_password'
+ ALTER USER 'mysuer'@'%' IDENTIFIED WITH mysql_native_password BY 'mypass';
 ```
 
 #### Liberando o acesso remoto ao MySQL
