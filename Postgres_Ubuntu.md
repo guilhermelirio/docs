@@ -33,9 +33,27 @@ Shall the new role be a superuser? (y/n) y
 ## Liberar o Acesso remoto (alterar o número de acordo com a versão do Postgres)
 ``` nano /etc/postgresql/13/main/postgresql.conf```
 
-### Subsitituir as linhas:
+### Alterar a linha:
 ```#listen_addresses = 'localhost'```
 por
 ```listen_addresses = '*'```
 
 CRTL + X -> Y
+
+## Liberar Acesso à todos IP's
+```nano /etc/postgresql/10/main/pg_hba.conf```
+
+### Alterar a linha:
+```
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            md5
+```
+por
+```
+# IPv4 local connections:
+host    all             all             0.0.0.0/0            md5
+```
+CRTL + X -> Y
+
+## Reiniciar o Postgres
+```$ sudo systemctl restart postgresql```
