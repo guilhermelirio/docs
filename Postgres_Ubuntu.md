@@ -34,4 +34,8 @@ Shall the new role be a superuser? (y/n) y
 ``` nano /etc/postgresql/13/main/postgresql.conf```
 
 ### Subsitituir as linhas:
+```#listen_addresses = 'localhost'```
+por
+```listen_addresses = '*'```
 
+CRTL + X -> Y
