@@ -127,3 +127,16 @@ pm2 list
 pm2 start index.js --name site1
 ```
 
+```
+pm2 startup
+```
+
+Copie e cole o comando completo que aparecer abaixo, por exemplo:
+```
+sudo su -c "env PATH=$PATH:/home/unitech/.nvm/versions/node/v4.3/bin pm2 startup <distribution> -u <user> --hp <home-path>
+```
+
+```
+pm2 save
+```
+
